@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/blueui_msg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="没有设备可以配置，点击右上角搜索设备。" />
+
+    <RelativeLayout
+        android:id="@+id/bluetooth_head"
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="蓝牙配置"
+            android:textSize="20sp" />
+
+        <ImageView
+            android:id="@+id/blue_saomiao"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dp"
+            android:clickable="true"
+            android:src="@drawable/base_drawable_car" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/my_device"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_below="@+id/bluetooth_head"
+        android:gravity="center_vertical"
+        android:paddingLeft="10dp"
+        android:text="我的设备" />
+
+    <ListView
+        android:id="@+id/blue_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/my_device" />
+</RelativeLayout>

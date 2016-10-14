@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/anRlHeadView"
+    android:layout_width="match_parent"
+    android:layout_height="48dp"
+    android:background="@color/CommColorBackground">
+
+    <LinearLayout
+        android:id="@+id/anLlBack"
+        android:layout_width="80dp"
+        android:layout_height="48dp"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:gravity="center_vertical"
+        android:background="@drawable/yy_drawable_selector_md_shape"
+        android:clickable="true">
+
+        <View
+            android:layout_width="28dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/base_drawable_backarrow" />
+
+        <TextView
+            android:id="@+id/anTxBack"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:gravity="center_vertical"
+            android:text="返回"
+            android:textSize="15sp"
+            android:textColor="@color/CommColorWhite" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/anTvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:background="@color/CommColorTransparent"
+        android:gravity="center_vertical"
+        android:text="标题"
+        android:textColor="@color/CommColorWhite"
+        android:textSize="18sp" />
+
+    <LinearLayout
+        android:layout_width="80dp"
+        android:layout_height="48dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="5dp"
+        android:clickable="true"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/anLlRight"
+            android:layout_width="39dp"
+            android:layout_height="48dp"
+            android:clickable="true"
+            android:gravity="center_vertical"
+            android:orientation="vertical"
+            android:visibility="invisible">
+
+            <Button
+                android:id="@+id/anBtnRight"
+                android:layout_width="20dp"
+                android:layout_height="18dp"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/base_drawable_loading"
+                android:gravity="center_vertical" />
+
+            <TextView
+                android:id="@+id/anTvRight"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:text="刷新"
+                android:textColor="@color/CommColorWhite"
+                android:textSize="11sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/anllRRight"
+            android:layout_width="39dp"
+            android:layout_height="48dp"
+            android:layout_marginLeft="2dp"
+            android:clickable="true"
+            android:gravity="center_vertical"
+            android:orientation="vertical"
+            android:visibility="invisible">
+
+            <Button
+                android:id="@+id/anBtnRRight"
+                android:layout_width="20dp"
+                android:layout_height="18dp"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/base_drawable_warning"
+                android:gravity="center_vertical" />
+
+            <TextView
+                android:id="@+id/anTvRRight"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:text="警告"
+                android:textColor="@color/CommColorWhite"
+                android:textSize="11sp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/anVwLine"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_below="@+id/anTvTitle"
+        android:background="@drawable/base_drawable_line_longother" />
+</RelativeLayout>
